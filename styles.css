@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  /*   color: #ebf2ff !important; */
+  background-color: #ebf2ff !important;
+}
+
+.add_new_btn_mobile_only {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 15PX 10PX;
+    background: white;
+    width: 100%;
+    z-index: 3;
+}
+
+@media (min-width: 760px) {
+    .add_new_btn_mobile_only {
+        display: none;
+    }
+}

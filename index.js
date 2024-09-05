@@ -3,6 +3,7 @@ var state = {
 };
 
 //DOM operation
+/* To get data from form to card */
 
 var taskContents = document.querySelector(".task_contents");
 var taskModal = document.querySelector(".task_modal_body");
@@ -37,4 +38,26 @@ ${
 </div>
 </div>
 `
+/* To get content from card to modal */
+const htmlModalContent = ({id,title,description,url}) => {
 
+    const date = new Date (parseInt(id));
+    return `
+    <div id = ${id}>
+    ${
+        url && `<img src=${url} alt="card image cap " class ="image-fluid mb-3"/>`
+    }
+    <strong class="text-muted text-sm">Created on ${date.toDateString()}</strong>
+    <h2 class="my-3">${title}</h2>
+    <p class="lead">${description}</p>
+    </div>
+
+    `
+}
+
+
+/* to store data on local storage  */
+
+const updateLocalStorage = ({}) => {
+    
+}

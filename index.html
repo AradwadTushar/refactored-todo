@@ -29,6 +29,25 @@
         </button>
      </div>
 
+     <!-- Open task Modal -->
+
+<div class="modal fade" id="showTask" tabindex="-1" aria-labelledby="showTaskLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Task Details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body task_modal_body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Add new item Modal -->
 <div class="modal fade" 
 id="addNewModal" 
@@ -116,7 +135,33 @@ aria-hidden="true">
     </div>
   </nav>
 
+  <!-- demo -->
 
+  <!-- <div class ="col-md-6 col-lg-4 mt-3" id=${id} key=${id}>
+    <div class=" card shadow-sm task_card">
+    <div class = "card_header d-flex justify-content-end task_card_header gap-2">
+    <button type = "button" class = "btn btn-outline-info mr-2" name=${id}>
+    <i class = "fas fa-pencil-alt" name=${id}></i>
+    </button>
+    <button type = "button" class = "btn btn-outline-danger mr-2 " name=${id}>
+    <i class = "fas fa-trash-alt" name=${id}></i>
+    </button>
+    </div>
+    <div class="card_body">
+    ${
+        url && `<img src=${url} alt="card image top " class ="card-image-top md-3 rounded-1g"/>`
+    }
+    <h4 class="card-title">${title}</h4>
+    <p class="description trim-3-lines text-muted card-text">${description}</p>
+    <div class="tags text-white d-flex flex-wrap ">
+    <span class="badge bg-primary m-1">${type}</span>
+    </div>
+    </div>
+    <div class="card-footer">
+    <button type="button" class="btn btn-outline-primary float-right" data-bs-toggle="modal" data-bs-target="#showTask">Open Task</button></div>
+    </div>
+    </div>
+ -->
 <div class="container">
     <section class="mt-4">
         <div class="row justify-content-center">
